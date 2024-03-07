@@ -22,7 +22,7 @@ Open `welcome.blade.php` in je `resources/views` folder.
 Het **\<style>\</style>** onderdeel kun je verwijderen.
 
 Om scripts en css dynamisch in te laden kun je gebruik maken van [vite](https://laravel.com/docs/10.x/vite).  
-Plaats de volgende regel in de header: 
+Plaats de volgende regel in de HTML head: 
 `@vite(['resources/css/app.css'])`
 
 In het bestand `vite.config.js` staat ingesteld welke bestanden er bijgehouden worden.  

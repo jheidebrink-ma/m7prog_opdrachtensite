@@ -45,6 +45,7 @@ Je kunt nu Laravel starten door gebruik te maken via Sail
 ```./vendor/bin/sail up```  
 
 ### 2b- Alternatief via composer
+**Volg deze stappen alleen als Sail niet werkt.** 
 Als alternatief kun je ook Laravel installeren via Composer.  
 Hiervoor dien je composer op je computer geïnstalleerd te hebben, dit controleer je door `cmd` of de `terminal` te openen en dit commando uit te voeren:  
 ```composer -V```  

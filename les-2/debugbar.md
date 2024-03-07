@@ -22,13 +22,13 @@ Stap voor stap uitleg kun je hier vinden:
 3. Installeer de debug bar via composer: <br>
 	```composer require barryvdh/laravel-debugbar --dev```
 4. Om de debug bar `aan` of `uit` te zetten kun je in de **.env** file aangeven of je applicatie in debug mode zit: ```APP_DEBUG=true```
-5. Mogelijk laad het systeem niet automatisch de debug bar, daarom moet je in de  
+5. _Optioneel:_ Mogelijk laad het systeem niet automatisch de debug bar, daarom moet je in de  
 	`providers array` in de `config/app.php` aangeven dat de debug bar geladen moet worden.   
 	Voeg daar deze regel toe:  
    ```Barryvdh\Debugbar\ServiceProvider::class,```
-6. Als je binnen laravel gebruik wilt maken van de debug functie om bijvoorbeeld een debug regel weer te geven dan moet je in de  
-	**config/app.php** de volgende regel aan het **facades** onderdeel toevoegen:  
-	`'Debugbar' => Barryvdh\Debugbar\Facades\Debugbar::class,`
+   Als je binnen laravel gebruik wilt maken van de debug functie om bijvoorbeeld een debug regel weer te geven dan moet je in de
+   **config/app.php** de volgende regel aan het **facades** onderdeel toevoegen:  
+   `'Debugbar' => Barryvdh\Debugbar\Facades\Debugbar::class,`
 
 ---
 ### 2- Controle
