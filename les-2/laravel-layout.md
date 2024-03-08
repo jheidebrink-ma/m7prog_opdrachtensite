@@ -22,9 +22,10 @@ Probeer een menu weer te geven en een eigen footer te maken. Maak **niet** je co
 ---
 #### Advies
 {: .text-blue-100 .fs-4 }
-Gebruik de indeling van dashboard.blade.php.  
-Hierbij wordt op een dynamische manier de layout opgehaald.  
-Haal maar eens alles weg en plaats de code binnen deze tags: `<x-guest-layout>`.
+Gebruik de indeling van dashboard.blade.php _( kopieer deze naar een nieuw bestand )_.  
+In dit bestand wordt op een dynamische manier de layout opgehaald.  
+Plaats deze code maar eens binnen deze tags: `<x-guest-layout>`.  
+Of verwijder een blok html en kijk eens wat er nu gebeurd.  
 
 ---
 ### 1- Layout instellen

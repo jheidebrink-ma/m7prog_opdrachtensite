@@ -42,7 +42,7 @@ npm run dev
 ---
 ### 2- Controle en account
 Als het goed is heb je nu ook werkende registratie, inlog/uitlog en wachtwoord vergeten functionaliteit.  
-Ga maar naar je browser naar je project en tik vervolgens het volgende path achter de url: `register`  
+Ga maar in je browser naar je project en tik vervolgens het volgende path achter de url: `register`  
 Je kunt ook rechtsboven op register klikken.  
 Zorg dat je een account hebt gemaakt om mee in te loggen op je website.  
 
