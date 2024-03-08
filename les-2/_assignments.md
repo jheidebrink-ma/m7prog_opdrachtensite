@@ -4,5 +4,5 @@
 1. [Installeer de debug bar](debugbar)
 2. [Installeer Tailwind CSS](tailwind)
 3. [Maak een design](design-layout)
-3. [Pas de Laravel layout aan naar jouw ontwerp en gebruik HTML/CSS en Tailwind CSS](laravel-layout)
-4. [Maak een homepage view en gebruik hierbij jouw layout](homepage)
+4. [Pas de Laravel layout aan naar jouw ontwerp en gebruik HTML/CSS en Tailwind CSS](laravel-layout)
+5. [Maak een homepage view en gebruik hierbij jouw layout](homepage)

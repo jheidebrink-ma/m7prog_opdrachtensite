@@ -15,6 +15,9 @@ Het belangrijkste is het maken van de layout. De layout bepaalt de algemene look
 Alle pagina's maken vervolgens gebruik van die layout (zodat je geen dubbele code hoeft te maken)  
 Je kunt gebruik maken van de voorbeeld layout die al in Laravel zit, bekijk eens de bestanden in de `view` folder in de `resources` folder.  
 
+### Note
+Het is in deze stap de bedoeling om 'ongeveer' een layout in te stellen.  
+Probeer een menu weer te geven en een eigen footer te maken. Maak **niet** je complete website af in deze stap.   
 
 ---
 #### Advies
