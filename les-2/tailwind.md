@@ -14,12 +14,18 @@ Door gebruik te maken van Tailwind hebben wij met weinig moeite een responsive w
 
 ---
 ### 1- Tailwind implementeren
-Volg in deze installatie handleiding alleen stappen **1**, **2** en **3**:   
+Je kunt de standaard Tailwind installatie volgen, maar doordat julie Breeze gebruiken hoef je niet alle stappen te doorlopen.
 [Tailwind CSS installation](https://tailwindcss.com/docs/installation)
-### Let op, de laatste twee stappen zijn voor ons anders:
-#### Eerst implementeren wij de css in de header:  
+
+Om Tailwind te installeren voer je deze commando's uit in de terminal:
+```shell
+npm install -D tailwindcss
+npx tailwindcss init
+```
+
+#### Vervolgens implementeren wij de css in de HTML head:  
 Open `welcome.blade.php` in je `resources/views` folder.  
-Het **\<style>\</style>** onderdeel kun je verwijderen.
+Het **\<style>\</style>** onderdeel kun je verwijderen.  
 
 Om scripts en css dynamisch in te laden kun je gebruik maken van [vite](https://laravel.com/docs/10.x/vite).  
 Plaats de volgende regel in de HTML head: 
