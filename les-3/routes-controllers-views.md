@@ -11,11 +11,11 @@ nav_exclude: true
 Wij gaan nu een aantal routes maken voor je website.  
 In eerste instantie wil ik deze pagina maken: http://localhost/about
 
-**Schrijf per pagina/functionaliteit op:**
-
-- De titel van de pagina
-- Een mooie url, bijvoorbeeld: `/projecten` of `/about` of `/contactformulier`.
-- De naam van de controller, bijvoorbeeld: `ProjectController`, `AboutController`, `ContactController`.
+**Denk na over verschillende pagina's en functionaliteiten:**
+Bijvoorbeeld:
+- Wat zou de titel van de pagina zijn?
+- Wat is een mooie url, bijvoorbeeld: `/projecten` of `/about` of `/contactformulier`.
+- Welke naam zou de controller krijgen?, bijvoorbeeld: `ProjectController`, `AboutController`, `ContactController`.
 
 ---
 
