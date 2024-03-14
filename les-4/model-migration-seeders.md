@@ -54,7 +54,7 @@ Vul de verschillende elementen van het model via faker:
 Of met de hand:
 ```shell
     DB::table('projects')->insert([
-        'titel'         => 'Mijn project titel',
+        'title'         => 'Mijn project titel',
         'intro'         => 'Anim non lorem sit est.',
         'description'   => 'Enim labore eu, sed. Sed esse incididunt aute velit. Incididunt, aute velit duis amet sint. Duis amet sint pariatur esse anim officia mollit. Sint pariatur esse anim. Esse anim officia mollit laboris aliqua, et esse.',
         'active'        => true,

@@ -47,14 +47,14 @@ Wij maken nu een paar extra elementen aan, bijvoorbeeld voor een titel en een om
 ```php
     Schema::create('projects', function (Blueprint $table) {
             $table->id();
-            $table->string('titel');
+            $table->string('title');
             $table->text('description')->nullable();
             $table->boolean('active')->default(false);
             $table->timestamps();
         });
 ```
-Ik heb een column voor 'titel' toegevoegd, een tekst column voor de description en een boolean om aan te geven of dit project wel of niet actief is.  
-Kun je zelf nog andere elementen voor de projecten verzinnen?  
+Ik heb een column voor 'title' toegevoegd, een tekst column voor de description en een boolean om aan te geven of dit project wel of niet actief is.
+Kun je zelf nog andere elementen voor de projecten verzinnen? Misschien een `intro` column.  
 Zie hier een overzicht van alle mogelijke types: [available-column-types](https://laravel.com/docs/10.x/migrations#available-column-types)  
 **Let op: blijf gebruik maken van engelse benamingen, gebruik niet `titel` en `title` door elkaar**
 
