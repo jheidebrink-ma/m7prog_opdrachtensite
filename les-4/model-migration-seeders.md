@@ -29,8 +29,12 @@ Hier vind je de `run` functie.
 Deze voert het toevoegen uit.  
 Je kunt nu Laravel Eloquent gebruiken om je data toe te voegen.  
 Dit lijkt erg op zoals wij straks met models omgaan.  
+Om gebruik te maken van deze seeder moet je eerst de DB functionaliteit importeren. Daarvoor moet je deze regel toevoegen bovenin het php document ( het `use` gedeelte ):
+```use Illuminate\Support\Facades\DB;```
+
 Het is ook mogelijk om gebruik te maken van **Model Factories** hierbij kun je een aantal items met random data zoals fake tekst toevoegen.  
-Zorg ervoor dat in het `use` gedeelte bovenaan de code ook de faker geladen wordt: ```use Faker\Factory as Faker; ```  
+Zorg ervoor dat in het `use` gedeelte bovenaan de code ook de faker geladen wordt:   
+```use Faker\Factory as Faker; ```  
 Bovenaan in de functie geef je aan dat je een faker wilt gebruiken om fake data toe te voegen. Dit hoeft niet, je kunt ook zelf de data verzinnen.  
 ```shell
     $faker = Faker::create();
@@ -41,9 +45,9 @@ Velden die jij zelf hebt bedacht maar hier niet staan zul je moeten toevoegen.
 Vul de verschillende elementen van het model via faker:   
 ```shell
     DB::table('projects')->insert([
-        'title'       => $faker->colorName();
-        'intro'       => $faker->text(50);
-        'description' => $faker->text();
+        'title'       => $faker->colorName(),
+        'intro'       => $faker->text(50),
+        'description' => $faker->text(),
         'active'        => true,
     ]);
 ```
@@ -51,7 +55,7 @@ Of met de hand:
 ```shell
     DB::table('projects')->insert([
         'titel'         => 'Mijn project titel',
-        'intro'         => 'Anim non lorem sit est.';
+        'intro'         => 'Anim non lorem sit est.',
         'description'   => 'Enim labore eu, sed. Sed esse incididunt aute velit. Incididunt, aute velit duis amet sint. Duis amet sint pariatur esse anim officia mollit. Sint pariatur esse anim. Esse anim officia mollit laboris aliqua, et esse.',
         'active'        => true,
     ]);
