@@ -2,8 +2,8 @@
 1,"2","29-2-2024","Kickoff - Laravel project maken","Je begint met het installeren en configureren van een nieuw Laravel project voor je website. Ook installeer je een authentication starter kit, zodat gebruikers kunnen registreren en inloggen.",
 2,"3","29-2-2024","Design - Tailwind CSS / Layouts","Je leert hoe een layout en een view samenwerken. Je past de Tailwind CSS aan met jouw eigen kleuren en fonts en gebruikt SASS en Laravel Mix om je frontend assets te compileren. Je zet je design en layout om in layout in Laravel. "
 3,"4","7-3-2024","Navigatie - Routes & Controllers","Je maakt een menu met links naar alle pagina’s op jouw website. Je maakt routes en controllers aan waar je later in verder kunt werken",
-4,"5","21-3-2024","Database - Migrations en Seeders","Je ontwerpt de data structuur voor jouw website en maakt de juiste model classes en migrations voor jouw database. Je maakt een seeder die alvast wat gegevens in de database zet om mee te werken.",
-5,"5","22-3-2024","Database - Controllers en Models","Je gaat de informatie uit de database met behulp van Controllers en Models ophalen.",
+4,"5","14-3-2024","Database - Migrations en Seeders","Je ontwerpt de data structuur voor jouw website en maakt de juiste model classes en migrations voor jouw database. Je maakt een seeder die alvast wat gegevens in de database zet om mee te werken.",
+5,"5","15-3-2024","Database - Controllers en Models","Je gaat de informatie uit de database met behulp van Controllers en Models ophalen.",
 6,"6","28-3-2024","Weergave - Controllers en Models","Je gaat verder met de vorige opdracht om informatie uit de database weer te geven.",
 7,"7","4-4-2024","CRUD - Forms & validatie (toevoegen gegevens)","Je gaat CRUD (Create-Read-Update-Delete) functionaliteit maken voor de gegevens op jouw website. Hiervoor maak je form(s) en leer je over het valideren van gegevens d.m.v. requests en validation rules",
 8,"7","5-4-2024","CRUD - Aanpassen & verwijderen","Je zorgt dat de ingevoerde gegevens ook aangepast kunnen worden.",
