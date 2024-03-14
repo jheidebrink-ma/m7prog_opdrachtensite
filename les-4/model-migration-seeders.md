@@ -19,7 +19,7 @@ Eerst gaan we een nieuwe seeder maken om straks data toe te kunnen voegen:
 php artisan make:seeder ProjectSeeder
 ```
 
-Er is nu een nieuwe seeder aangemaakt waarmee een project toegevoegd kan worden.
+Er is nu een nieuwe seeder aangemaakt waarmee een project toegevoegd kan worden.  
 Open maar het bestand: 
 ```
 /database/seeders/ProjectSeeder.php
@@ -29,13 +29,13 @@ Hier vind je de `run` functie.
 Deze voert het toevoegen uit.  
 Je kunt nu Laravel Eloquent gebruiken om je data toe te voegen.  
 Dit lijkt erg op zoals wij straks met models omgaan.  
-Om gebruik te maken van deze seeder moet je eerst de DB functionaliteit importeren. Daarvoor moet je deze regel toevoegen bovenin het php document ( het `use` gedeelte ):
+Om gebruik te maken van deze seeder moet je eerst de DB functionaliteit importeren. Daarvoor moet je deze regel toevoegen bovenin het php document ( het `use` gedeelte ):  
 ```use Illuminate\Support\Facades\DB;```
 
 Het is ook mogelijk om gebruik te maken van **Model Factories** hierbij kun je een aantal items met random data zoals fake tekst toevoegen.  
 Zorg ervoor dat in het `use` gedeelte bovenaan de code ook de faker geladen wordt:   
 ```use Faker\Factory as Faker; ```  
-Bovenaan in de functie geef je aan dat je een faker wilt gebruiken om fake data toe te voegen. Dit hoeft niet, je kunt ook zelf de data verzinnen.  
+Bovenaan in de functie geef je aan dat je een faker wilt gebruiken om fake data toe te voegen. Dit hoeft niet, je kunt ook zelf de data verzinnen zoals in het voorbeeld met de hand.  
 ```shell
     $faker = Faker::create();
 ```
@@ -75,7 +75,29 @@ php artisan db:seed --class=ProjectSeeder
 sail artisan db:seed --class=ProjectSeeder
 ```
 
-Open nu de database interface ( via een app of phpmyadmin ) en controleer of de data is toegevoegd. 
+## 3- Controle  
+Open nu de database interface ( via een app of phpmyadmin ) en controleer of de data is toegevoegd.   
+Waarschijnlijk heb je nog geen verbinding met deze database server, hiervoor kunt je een IDE gebruiken of een PhpMyAdmin server implementeren, daarvoor moet je dan deze stappen volgen:   
+1- Plak de volgende code in `docker-compose.yml` onder de `selenium` container.
+```dockerfile
+    phpmyadmin:
+        image: phpmyadmin
+        environment:
+            PMA_HOST: 'mysql'
+            PMA_USER: '${DB_USERNAME}'
+            PMA_PASSWORD: '${DB_PASSWORD}'
+        ports:
+            - "1088:80"
+        networks:
+            - sail
+```
+Let goed op de uitlijning, deze moet overeenkomen met de andere blokken.  
+2- Build de omgeving weer met het commando:  
+```shell
+./vendor/bin/sail up -d
+```
+3- Open de nieuwe docker container in de browser:  
+[http://localhost:1088](http://localhost:1088)
 
 ---
 ### Optionele video:
