@@ -35,7 +35,7 @@ Afhankelijk van je setup gebruik je `php artisan` of `sail artisan`, hier krijg 
 ---
 ### 1- Controller aanmaken
 Om een controller aan te maken gebruik je dit commando:  
-`php artisan make:controller controllerName`
+`php artisan make:controller ControllerName`
 
 Bijvoorbeeld voor mijn about pagina wat wij nu gaan aanmaken:  
 `php artisan make:controller AboutController`  
