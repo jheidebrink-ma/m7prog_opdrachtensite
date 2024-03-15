@@ -58,7 +58,7 @@ Met de volgende code kun je een model aanmaken en vervolgens toevoegen aan de da
 
 ---
 ## 4- Resultaat
-Roep de nieuwe url op in je browser.
+Roep de nieuwe url op in je browser. [http://localhost/projects/add](http://localhost/projects/add)
 
 Als het goed is zie je een witte pagina.
 

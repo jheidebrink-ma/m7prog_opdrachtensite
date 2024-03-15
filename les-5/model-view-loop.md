@@ -34,7 +34,7 @@ Of als je alleen de actieve projecten wilt ophalen, gesorteerd op title:
                ->take(10)
                ->get();
 ```
-Geef vervolgens deze informatie door aan het view bestand `/resources/views/projects/index.blade.php`
+Geef vervolgens deze informatie door aan het view bestand dat je straks gaat maken: `/resources/views/projects/index.blade.php`
 ```php
         return view(
             'projects.index',
