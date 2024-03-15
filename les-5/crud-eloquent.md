@@ -18,6 +18,16 @@ Je hoeft geen ingewikkelde SQL queries meer te schrijven, maar werkt via de PHP 
 Wij gaan tijdelijk via de controller extra projecten toevoegen om iets meer data weer te kunnen geven, dit doen wij in 3 stappen.
 
 ---
+### Uitgangspunt
+{: .text-green-100 .fs-6 }
+Ik ga er in dit voorbeeld vanuit dat je in de afgelopen lessen een `Project` model én een `Project Controller` hebt aangemaakt.  
+Als dat niet het geval is dan kun moet je overal waar een referentie staat naar een `Project` je eigen object plaatsen.  
+Of je maakt een nieuw model en controller via php artisan:  
+```shell
+php artisan make:Model -c Project
+```
+
+---
 ### 1- Route aanmaken
 Maak een nieuwe route aan in `routes/web.php`, bijvoorbeeld:
 ```php
