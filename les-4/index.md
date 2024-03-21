@@ -7,6 +7,3 @@ nav_exclude: false
 ---
 
 {% include classroom-assignment.md les="4" %}
-
-
-
