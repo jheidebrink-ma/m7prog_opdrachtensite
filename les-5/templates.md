@@ -22,13 +22,16 @@ Zie voor meer informatie [https://laravel.com/docs/10.x/blade](https://laravel.c
 Wij gaan een master layout maken waar wij verschillende elementen gaan toevoegen. Elke template zal de master gaan extenden ( uitbreiden ).
 
 ## 4 stappen:
-1. Maak een `master.blade.php` bestand aan in de folder `resource/views/layout/`
-2. Plaats in deze pagina verschillende HTML onderdelen, zie een voorbeeld van een layout onderaan de pagina, deze niet gebruiken omdat hij niet werkt.    
+1. Voordat wij een master.blade.php view kunnen gebruiken, moeten wij aangeven dat er een Master Layout bestaat.  
+    Ga naar deze folder `app/View/Components` en maak een nieuw bestand `MasterLayout.php` aan.  
+    Gebruik een ander bestand in deze folder als voorbeeld.  
+2. Maak nu een `master.blade.php` bestand aan in de folder `resource/views/layout/`
+3. Plaats in deze pagina verschillende HTML onderdelen, zie een voorbeeld van een layout onderaan de pagina, deze niet gebruiken omdat hij niet werkt.    
     Belangrijk is dat je ergens aangeeft dat daar de content moet komen met deze code:    
     `{% raw %}{{ $slot }}{% endraw %}`
-3. Open het project.blade.php view bestand en geef buiten je content aan dat je de master wilt extenden door deze code te plaatsen:    
+4. Open het project.blade.php view bestand en geef buiten je content aan dat je de master wilt extenden door deze code te plaatsen:    
    `<x-master-layout>`
-4. De content binnen dit blok zal nu in op de plek waar `{% raw %}{{ $slot }}{% endraw %}` staat komen.
+5. De content binnen dit blok zal nu in op de plek waar `{% raw %}{{ $slot }}{% endraw %}` staat komen.
 
 ---
 ## 2- JavaScript

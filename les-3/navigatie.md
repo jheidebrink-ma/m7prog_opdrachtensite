@@ -18,7 +18,7 @@ In de HTML kun je links maken naar een betreffende route.
 Hiervoor gebruik je de naam van de route die je hebt ingesteld bij de betreffende route.  
 Bijvoorbeeld bij de about route: 
 ```
-{% raw %}{{ route('about') :}{% endraw %}
+{% raw %}{{ route('about') }}{% endraw %}
 ```
 In de blade templates kun je php functies aanroepen door aan te geven dat je iets wilt uitvoeren.  
 Dat doe je door een code te plaatsen tussen deze twee karakters:  
