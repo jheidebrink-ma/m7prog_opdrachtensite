@@ -35,11 +35,12 @@ Wij gaan een master layout maken waar wij verschillende elementen gaan toevoegen
 
 ---
 ## 2- JavaScript
-Dit zelfde systeem  kunnen wij ook met bijvoorbeeld JavaScript gebruiken door bijvoorbeeld deze code in `project.blade.php` te plaatsen:  
+Dit zelfde systeem  kunnen wij ook met bijvoorbeeld JavaScript gebruiken door bijvoorbeeld deze code in `project.blade.php` te plaatsen:
+( let op, dit is een niet bestaande javascript functie, plaats zelf een stukje javascript dat wel werkt )
 ```javascript
     @section('scripts')
         <script>
-            Console.log('Mijn script werkt');
+            dieIets('Mijn script werkt');
         </script>
     @endsection
 ```
