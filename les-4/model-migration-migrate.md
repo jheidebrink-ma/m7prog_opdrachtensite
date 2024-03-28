@@ -74,7 +74,31 @@ De kans is groot dat je nu een error ziet doordat Artisan geen verbinding kan ma
 De oplossing hiervoor is door dit commando uit te voeren vanaf de `laravel` / `php` instance in Docker.  
 _Open daarvoor het terminal venster door in docker desktop op de drie puntjes achter de betreffende container te klikken en terminal te selecteren._
 
+--- 
+## 4- Controle
 Open nu de database interface ( via een app als **HeidiSQL** of **SequelAce** of de webinterface **phpmyadmin** ) en controleer of de tabel is toegevoegd.   
+Waarschijnlijk heb je nog geen verbinding met deze database server, hiervoor kunt je een IDE gebruiken of een PhpMyAdmin server implementeren, daarvoor moet je dan deze stappen volgen:   
+1- Plak de volgende code in `docker-compose.yml` onder de `selenium` container.
+```dockerfile
+    phpmyadmin:
+        image: phpmyadmin
+        environment:
+            PMA_HOST: 'mysql'
+            PMA_USER: '${DB_USERNAME}'
+            PMA_PASSWORD: '${DB_PASSWORD}'
+        ports:
+            - "1088:80"
+        networks:
+            - sail
+```
+Let goed op de uitlijning, deze moet overeenkomen met de andere blokken.  
+2- Build de omgeving weer met het commando:
+```shell
+./vendor/bin/sail up -d
+```
+3- Open de nieuwe docker container in de browser:  
+[http://localhost:1088](http://localhost:1088)
+
 
 ---
 ### Optionele video:
