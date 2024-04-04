@@ -91,8 +91,10 @@ Hier zie je als het goed is een route staan voor je projecten admin index in het
 De route naam ( aan het eind van de regel ) kun je gebruiken om dit overzicht op te halen. 
 Bij mij is dat: `projectadmin.index`  
 Gebruik deze route naam bijvoorbeeld op deze manier:  
-```
+```html
+{% raw %}
 <a href="{{route('projectadmin.index')">Naar mijn project admin index</a>
+{% endraw %}
 ``` 
 
 ---
