@@ -28,10 +28,10 @@ Hier vind je de documentatie van de Tailwind configuratie:
 Tailwind werkt anders dan bijvoorbeeld bootstrap. 
 Tailwind kijkt naar jouw view bestanden ( templates ) om te zien welke styles en andere codes jij gebruikt in je bestanden. Alleen noodzakelijke css wordt gecompiled. 
 Zo blijft de grote van je css minimaal.   
-Hiervoor moet je wel in een terminal scherm Tailwind watch open laten staan.
+Hiervoor moet je wel in een terminal scherm npm watch open laten staan.
 Open terminal scherm en voer dit commando uit:
 ```shell
-npx tailwindcss -i ./resources/css/app.css -o ./public/dist/app.css --watch
+npm run dev
 ```
 Pas maar ergens de achtergrond aan door bijvoorbeeld de background aan te passen.  
 Dit doe je door een class toe te voegen of aan te passen. 

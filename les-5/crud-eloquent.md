@@ -20,11 +20,11 @@ Wij gaan tijdelijk via de controller extra projecten toevoegen om iets meer data
 ---
 ### Uitgangspunt
 {: .text-green-100 .fs-6 }
-Ik ga er in dit voorbeeld vanuit dat je in de afgelopen lessen een `Project` model én een `Project Controller` hebt aangemaakt.  
-Als dat niet het geval is dan kun moet je overal waar een referentie staat naar een `Project` je eigen object plaatsen.  
+Ik ga er in dit voorbeeld vanuit dat je in de afgelopen lessen een `Project` model én een `ProjectController` hebt aangemaakt.  
+Als je die anders genoemd hebt niet dan moet je overal waar een referentie staat naar een `Project` je eigen object naam plaatsen.  
 Of je maakt een nieuw model en controller via php artisan:  
 ```shell
-php artisan make:Model -c Project
+php artisan make:Controller ProjectController
 ```
 
 ---
@@ -47,6 +47,9 @@ Daar moet nu een `add` functie komen die de data gaat toevoegen.
 ---
 ### 3- Project aanmaken
 Met de volgende code kun je een model aanmaken en vervolgens toevoegen aan de database, plaats deze code binnen de bovenstaande functie.
+Let op:
+Op de plek van `Model` moet waarschijnlijk iets anders staan.  
+Waarschijnlijk heb jij in de migratie niet een `field_one` kolom toegevoegd aan je model, kijk maar eens in je laatste bestand in de **migration folder** en voeg daar de velden toe die je wilt vullen.  
 ```php
     // Maak een model aan
     $model = new Model();

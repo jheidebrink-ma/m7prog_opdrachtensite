@@ -81,6 +81,8 @@ Verplaats nu de de oude dashboard route ook binnen deze prefix.
 
 En tenslotte voeg je de middleware requirements to aan de prefix zodat je zeker weet dat iemand is ingelogd als hij naar het dashboard toe gaat.
 
+Geef deze nieuwe resource ook een naam zodat je deze later ook weer kunt gebruiken.
+
 {% raw %}
 ```shell
 Route::prefix('/dashboard')
@@ -96,7 +98,7 @@ Route::prefix('/dashboard')
              [
                  'projectadmin' => ProjectAdminController::class,
              ]
-         );
+         )->name('projectadmin');
      });
 ```
 {% endraw %}
@@ -111,8 +113,6 @@ Plaats in de controller die je gemaakt hebt verschillende teksten om zo zeker te
     }
 ```
 {% endraw %}
-
-Als je nu je project gaat testen dan zie je nu welke pagina / functionaliteit je bekijkt.
 
 
 ---

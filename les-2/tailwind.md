@@ -31,17 +31,14 @@ Om scripts en css dynamisch in te laden kun je gebruik maken van [vite](https://
 Plaats de volgende regel in de HTML head:  
 `@vite(['resources/css/app.css'])`
 
+---
+### 2- Compile nu de css
 In het bestand `vite.config.js` staat ingesteld welke bestanden er bijgehouden worden.  
 Om de bestanden te gebruiken in de public folder moet je je project compilen via npm.
-Draai daarvoor het volgende commando in de terminal:
+Draai daarvoor het volgende commando in de terminal _( in je editor )_ :
 ```shell
 npm run dev
 ```
-
----
-### 2- Compile nu de css
-In de terminal kun je de css compile met dit commando:  
-```npx tailwindcss -i ./resources/css/app.css -o ./public/dist/app.css --watch ```  
 #### Bewaar dit commando omdat je dit elke keer moet aanzetten als je wijzigingen wilt doorvoeren in de css en JavaScript.
 
 ---

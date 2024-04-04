@@ -23,7 +23,7 @@ Maak in je ProjectController een index functie aan waar je straks alle projecten
 
 ---
 ### 2- Haal alle projecten op
-Binnen deze functie haal je vervolgens alle Projecten op door het model te laden en daarbij aan te geven wat jke wilt ophalen.
+Binnen deze functie haal je vervolgens alle Projecten op door het model te laden en daarbij aan te geven wat je wilt ophalen.
 ```php
     $projects = Project::all();
 ```

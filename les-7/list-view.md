@@ -47,7 +47,7 @@ Je hebt nu twee dezelfde bestanden.
 Pas in dit bestand een tekst aan zodat je weet naar welke view je kijkt en je niet per ongeluk naar de dashboard view andere bestand kijkt.   
 Bijvoorbeeld het tekstje: `You're logged in!` kun je veranderen in `Projecten overzicht`
 
-Geef aan in de index functie van je controller aan dat je een view wilt weergeven.
+Geef aan in de `index` functie van je `controller` aan dat je een view wilt weergeven.  
 Bijvoorbeeld met deze functie:
 ```php
 return view('dashboard.projects.index');
@@ -88,8 +88,12 @@ Bekijk eerst even welke routes er allemaal zijn door dit Artisan commando uit te
 php artisan route:list
 ```
 Hier zie je als het goed is een route staan voor je projecten admin index in het dashboard.  
-Die url kun je gebruiken om dit overzicht te zien.  
-Bij mij is dat: `dashboard/projectadmin`
+De route naam ( aan het eind van de regel ) kun je gebruiken om dit overzicht op te halen. 
+Bij mij is dat: `projectadmin.index`  
+Gebruik deze route naam bijvoorbeeld op deze manier:  
+```
+<a href="{{route('projectadmin.index')">Naar mijn project admin index</a>
+``` 
 
 ---
 
