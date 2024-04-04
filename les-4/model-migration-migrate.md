@@ -92,7 +92,11 @@ Waarschijnlijk heb je nog geen verbinding met deze database server, hiervoor kun
             - sail
 ```
 Let goed op de uitlijning, deze moet overeenkomen met de andere blokken.  
-2- Build de omgeving weer met het commando:
+2- Build de omgeving nu met het docker commando ( in je powershell ):
+```shell
+docker-compose up -d
+```
+Of op mac in je terminal:  
 ```shell
 ./vendor/bin/sail up -d
 ```
