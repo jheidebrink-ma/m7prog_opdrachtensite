@@ -58,6 +58,14 @@ Waarschijnlijk heb jij in de migratie niet een `field_one` kolom toegevoegd aan 
     // sla het model op
     $model->save();
 ```
+Bijvoorbeeld zo iets, je hoeft alleen velden in te vullen die je wilt:
+```php
+    $model->titel       = 'Mijn titel';
+    $model->description = 'mijn verhaal';
+    $model->active      = true;
+```
+
+
 
 ---
 ## 4- Resultaat
