@@ -61,7 +61,8 @@ Zie hier een overzicht van alle mogelijke types: [available-column-types](https:
 --- 
 ## 3- Migratie uitvoeren
 Voor het toevoegen van de tabel met de kolommen hoeven wij geen mysql te schrijven, maar kan ik Laravel de opdracht geven om dit uit te voeren. 
-Gebruik hiervoor de migratie functionaliteit van Laravel:
+Gebruik hiervoor de migratie functionaliteit van Laravel.  
+Dit commando voer je weer uit in de terminal in Docker
 ```shell
 // Wanneer je gebruik maakt van de originele docker setup
 php artisan migrate
