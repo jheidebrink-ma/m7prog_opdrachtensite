@@ -47,7 +47,7 @@ Bij `ModelNaam` geef je de naam op van je model, bijvoorbeeld `Project`.
   php artisan make:controller MijnControler --model=ModelNaam
 ```
 
-Je hebt nu neen complete controller, bekijk `app/Http/Controllers/ProjectAdminController.php` maar even.
+Je hebt nu een complete controller, bekijk `app/Http/Controllers/ProjectAdminController.php` maar even.
 
 ### 2- Routes aanmaken
 In de routes gaan wij nu routes aanmaken voor alle CRUD handelingen, hiervoor kun je de route-groups gebruiken:
