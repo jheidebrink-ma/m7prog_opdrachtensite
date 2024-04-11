@@ -35,7 +35,7 @@ Meer informatie over components [https://laravel.com/docs/11.x/blade#components]
 4. Plaats in deze pagina verschillende HTML onderdelen, zie een voorbeeld van een layout onderaan de pagina, deze niet gebruiken omdat hij niet werkt.    
     Belangrijk is dat je ergens aangeeft dat daar de content moet komen met deze code:    
     `{% raw %}{{ $slot }}{% endraw %}`
-5. Open het project.blade.php view bestand en geef buiten je content aan dat je de master wilt extenden door deze code te plaatsen:   
+5. Open het project/index.blade.php view bestand en geef buiten je content aan dat je de master wilt extenden door deze code te plaatsen:   
    `<x-master-layout>`
 6. De content binnen dit blok zal nu in op de plek waar `{% raw %}{{ $slot }}{% endraw %}` staat komen.
 
