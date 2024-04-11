@@ -23,7 +23,7 @@ Wij gaan een master layout maken waar wij verschillende elementen gaan toevoegen
 Ik gebruik `php artisan` om zoveel mogelijk automatisch te laten uitvoeren.  
 Meer informatie over components [https://laravel.com/docs/11.x/blade#components](https://laravel.com/docs/11.x/blade#components)
 
-## 5 stappen:
+## 6 stappen:
 1. Begin met het maken van een component met onderstaande `php artisan` commando.
    Plaats op de plek van `NAAM-VAN-COMPONENT` de naam van je component, bijvoorbeeld **MasterLayout**.
     ```shell
