@@ -34,10 +34,6 @@ Daarna kun je de gegevens via je Model class makkelijk toevoegen aan de database
 {: .text-blue-100 .fs-4 }
 
 ---
-
-{% include commit_push.md %}
-
----
 ### Volgende stap:
 {: .text-green-100 .fs-4 }  
 [Route groep maken voor admin routes - dashboard layout](admin-dashboard)
