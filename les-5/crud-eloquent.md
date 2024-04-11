@@ -36,8 +36,9 @@ Maak een nieuwe route aan in `routes/web.php`, bijvoorbeeld:
 
 ---
 ### 2- Controller endpoint aanmaken
-Deze nieuwe route moet natuurlijk wel ergens opgevangen worden, dat doe je in de controller : `app/Http/Controllers/ProjectController.php`.  
-Daar moet nu een `add` functie komen die de data gaat toevoegen.
+Deze nieuwe route moet natuurlijk wel ergens verwerkt worden. Dat doe je in het controller bestand: `app/Http/Controllers/ProjectController.php`.  
+Daar moet nu een `add` functie komen die de data gaat toevoegen.  
+Plaats dit binnen de Class.
 ```php
     public function add() {
         

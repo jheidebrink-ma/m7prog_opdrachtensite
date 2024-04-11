@@ -21,7 +21,7 @@ Zie voor meer informatie [https://laravel.com/docs/10.x/blade](https://laravel.c
 
 Wij gaan een master layout maken waar wij verschillende elementen gaan toevoegen. Elke template zal de master gaan extenden ( uitbreiden ).
 
-## 4 stappen:
+## 5 stappen:
 1. Voordat wij een master.blade.php view kunnen gebruiken, moeten wij aangeven dat er een Master Layout bestaat.  
     Ga naar deze folder `app/View/Components` en maak een nieuw bestand `MasterLayout.php` aan.  
     Gebruik een ander bestand in deze folder als voorbeeld, je zult in dit nieuwe bestand op twee plekken een aanpassing moeten doen.  
