@@ -54,12 +54,12 @@ Je weet nu hoe je de data kunt ophalen, nu gaan wij aan de slag met de validatie
 Dit kan op twee manieren, of je plaatst het resultaat in een variabele óf je stopt het script als het niet goed is.  
 De eerste optie is voor straks makkelijker omdat we dan gelijk de valide data in een array hebben.  
 Je moet per element aangeven of het verplicht is en of er specifieke eisen zijn.  
-Als de titel bijvoorbeeld `verplicht` is **én** `uniek` moet zijn in de posts tabel **én** hij `maximaal 255 karakters` mag bevatten dan zou dit werken:   
+Als de titel bijvoorbeeld `verplicht` is **én** `uniek` moet zijn in de `posts` tabel **én** hij `maximaal 255 karakters` mag bevatten dan zou dit werken:   
 ```php
     public function store(Request $request)
     {
         $valid_data = $request->validate([
-            'title'      => 'required|unique:posts|max:255',
+            'title'      => 'required|unique:TABLE_NAME|max:255',
             'onderdeel'  => 'required',
         ]);
         

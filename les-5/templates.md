@@ -19,33 +19,41 @@ In Laravel kun je gebruik maken van een basis template waar je variabele objecte
 Er zijn twee verschillende manieren om deze implementatie te gebruiken. Wij gaan aan de slag met het `@yield` commando.
 Zie voor meer informatie [https://laravel.com/docs/10.x/blade](https://laravel.com/docs/10.x/blade)
 
-Wij gaan een master layout maken waar wij verschillende elementen gaan toevoegen. Elke template zal de master gaan extenden ( uitbreiden ).
+Wij gaan een master layout maken waar wij verschillende elementen gaan toevoegen. Elke template zal de master gaan extenden ( uitbreiden ).  
+Ik gebruik `php artisan` om zoveel mogelijk automatisch te laten uitvoeren.  
+Meer informatie over components [https://laravel.com/docs/11.x/blade#components](https://laravel.com/docs/11.x/blade#components)
 
 ## 5 stappen:
-1. Voordat wij een master.blade.php view kunnen gebruiken, moeten wij aangeven dat er een Master Layout bestaat.  
-    Ga naar deze folder `app/View/Components` en maak een nieuw bestand `MasterLayout.php` aan.  
-    Gebruik een ander bestand in deze folder als voorbeeld, je zult in dit nieuwe bestand op twee plekken een aanpassing moeten doen.  
-2. Maak nu een `master.blade.php` bestand aan in de folder `resource/views/layout/`
-3. Plaats in deze pagina verschillende HTML onderdelen, zie een voorbeeld van een layout onderaan de pagina, deze niet gebruiken omdat hij niet werkt.    
+1. Begin met het maken van een component met onderstaande `php artisan` commando.
+   Plaats op de plek van `NAAM-VAN-COMPONENT` de naam van je component, bijvoorbeeld **MasterLayout**.
+    ```shell
+     php artisan make:Component NAAM-VAN-COMPONENT
+    ```
+2. In deze folder: `app/View/Components` zie je nu een nieuw bestand: `MasterLayout.php`, open deze en geef in de render functie aan dat je de `layouts.master` wilt weergeven.  
+   `return view('layouts.master');`
+3. Maak nu een nieuwe view aan in je layouts folder: `master.blade.php`
+4. Plaats in deze pagina verschillende HTML onderdelen, zie een voorbeeld van een layout onderaan de pagina, deze niet gebruiken omdat hij niet werkt.    
     Belangrijk is dat je ergens aangeeft dat daar de content moet komen met deze code:    
     `{% raw %}{{ $slot }}{% endraw %}`
-4. Open het project.blade.php view bestand en geef buiten je content aan dat je de master wilt extenden door deze code te plaatsen:    
+5. Open het project.blade.php view bestand en geef buiten je content aan dat je de master wilt extenden door deze code te plaatsen:   
    `<x-master-layout>`
-5. De content binnen dit blok zal nu in op de plek waar `{% raw %}{{ $slot }}{% endraw %}` staat komen.
+6. De content binnen dit blok zal nu in op de plek waar `{% raw %}{{ $slot }}{% endraw %}` staat komen.
 
 ---
 ## 2- JavaScript
-Dit zelfde systeem  kunnen wij ook met bijvoorbeeld JavaScript gebruiken door bijvoorbeeld deze code in `project.blade.php` te plaatsen:
-( let op, dit is een niet bestaande javascript functie, plaats zelf een stukje javascript dat wel werkt )
+Dit zelfde systeem kunnen wij ook voor bijvoorbeeld de JavaScripts gebruiken door deze code in je `layouts/project/index.blade.php` te plaatsen:
+_( let op, dit is een niet bestaande javascript functie, plaats zelf een stukje javascript dat wel werkt )_
 ```javascript
     @section('scripts')
         <script>
-            dieIets('Mijn script werkt');
+            doeIets('Mijn script werkt');
         </script>
     @endsection
 ```
 
-In de `footer.blade.php` kun je in de deze scripts ophalen met deze code:  
+In de `layouts/partials/footer.blade.php` kun je in de deze scripts ophalen met deze code:  
+Heb je deze view niet, maak dan in je `layouts` folder een mapje `partials`, hier komen verschillende onderdelen in zoals de footer.  
+Plaats hierin je nieuwe **footer.blade.php** bestand, met daarin de volgende code.
 ```php
     @yield( 'scripts' )
 ```

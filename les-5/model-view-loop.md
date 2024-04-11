@@ -47,7 +47,7 @@ Geef vervolgens deze informatie door aan het view bestand dat je straks gaat mak
 
 ---
 ### 3- Maak een view bestand 
-Maak een nieuw views bestand aan:  
+Maak een nieuw views bestand aan _( als je deze folder niet hebt dan moet je die even aanmaken )_:  
 `/resources/views/projects/index.blade.php`
 Je kunt hierbinnen de als voorbeeld een oud bestand gebruiken.  
 In het content gedeelte plaats je vervolgens de loop:  
