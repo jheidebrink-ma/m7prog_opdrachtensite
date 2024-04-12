@@ -51,6 +51,7 @@ _( let op, dit is een niet bestaande javascript functie, plaats zelf een stukje 
     @endsection
 ```
 
+--- 
 In de `layouts/partials/footer.blade.php` kun je de scripts section ophalen met de code `@yield( 'scripts' )`  
 Heb je dit bestand nog niet? Maak dan in je `layouts` folder een mapje `partials` aan, hier komen verschillende onderdelen in zoals de footer.  
 Plaats hierin je nieuwe **footer.blade.php** bestand, met daarin de volgende code:  
@@ -58,6 +59,7 @@ Plaats hierin je nieuwe **footer.blade.php** bestand, met daarin de volgende cod
     @yield( 'scripts' )
 ```
 
+---
 Nu is het nog de bedoeling dat deze footer in de master.blade.php geladen gaat worden.  
 Dit kun je doen met de `@include` functie zoals je ook in andere blade bestanden ziet voor bijvoorbeeld het menu.  
 
