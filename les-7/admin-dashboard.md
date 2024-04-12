@@ -98,7 +98,7 @@ Route::prefix('/dashboard')
              [
                  'projectadmin' => ProjectAdminController::class,
              ]
-         )->name('projectadmin');
+         );
      });
 ```
 {% endraw %}
