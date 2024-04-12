@@ -13,7 +13,7 @@ Je hebt een overzicht van de projecten gemaakt, nu gaan wij aan de slag om één
 
 ---
 ### 1- Route aanmaken
-Wij beginnen met het aanmaken van een route met daarin een referentie naar het project Model.
+Wij beginnen met het aanmaken van een route met daarin een referentie naar het Model: **Project**.
 
 Open `/routes/web.php` en voeg daar een nieuwe route toe waarbij je in het `url` gedeelte _op de laatste plek_ aangeeft dat er een verplichte variabele is.    
 Dat doe je door de model naam tussen brackets te plaatsen:  
@@ -41,7 +41,7 @@ Hierdoor zie je in ieder geval wat informatie als je naar de url gaat.
 
 ---
 ### 3- View
-Kopieer nu de project index view en noem die show.blade.php
+Kopieer nu de projects/index.blade.php view en noem die show.blade.php
 Verwijder de loop en laat bijvoorbeeld de titel zien van het project:
 {% raw %}
 ```php
