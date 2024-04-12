@@ -32,7 +32,7 @@ Let hierbij op dat je een parameter aanmaakt met dezelfde naam als de variabele 
 In ons geval `project`.  
 Maak ook gebruik van **type-casting** waarbij je forceert dat de variabele een Project is.  
 ```php
-public function show(Project $project): string
+public function show(Project $project)
 {
 }
 ```
@@ -61,7 +61,7 @@ Geef daar nu het model door aan de view zoals in dit voorbeeld met een model.  _
      * @param Model $model
      * @return string
      */
-    public function show(Model $model): string
+    public function show(Model $model)
     {
         return view('model.show', ['model'=>$model]);
     }
