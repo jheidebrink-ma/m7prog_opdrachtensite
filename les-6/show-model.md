@@ -41,7 +41,7 @@ Hierdoor zie je in ieder geval wat informatie als je naar de url gaat.
 
 ---
 ### 3- View
-**Kopieer** nu de `projects/index.blade.php` view en noem die `show.blade.php`
+**Dupliceer** nu de `projects/index.blade.php` view en noem die `show.blade.php`
 Verwijder de loop en laat bijvoorbeeld de titel zien van het project:
 {% raw %}
 ```php
