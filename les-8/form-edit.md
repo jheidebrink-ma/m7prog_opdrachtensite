@@ -18,7 +18,7 @@ De link naar deze actie is de route `model.edit`, waarbij je het model of het id
 Bijvoorbeeld: ``` route('project.edit', $project) ```.  
 Deze url kun je opvragen door het volgende php artisan commando uit te voeren in de terminal: 
 ```shell
- php artisan route:links
+ php artisan route:list
  ```  
 **Note:** Zorg ervoor dat deze knop alleen zichtbaar is voor mensen die ingelogd zijn.  
 Voorbeeld, in mijn geval is dit een link die eruit ziet als een knop.
