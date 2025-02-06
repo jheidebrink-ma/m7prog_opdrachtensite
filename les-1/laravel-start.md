@@ -15,7 +15,7 @@ Deze omgeving gaan wij tijdens deze gehele module gebruiken.
 ### 1- Laravel project initialiseren
 1- Maak een nieuwe repository aan in [GitHub](http://github.com/) voor **m7prog-laravel**  
 2- Navigeer op je computer naar de folder waar je project straks komt te staan.  
-3- Wij werken nu volgens de setup van [laravel.com](https://laravel.com/docs/10.x)  
+3- Wij werken nu volgens de setup van [laravel.com](https://laravel.com/docs/11.x)  
 4- Start eerst [Docker Desktop](https://www.docker.com/products/docker-desktop/)  
 Je kunt Laravel installeren op **twee** manieren, met een nieuwe docker installatie via **curl** of via **composer**. 
 Begin met de eerste versie, gaat dit mis, dan kun je overstappen op het alternatief vanuit docker. 
