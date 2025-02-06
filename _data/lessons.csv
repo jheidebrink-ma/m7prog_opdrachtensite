@@ -1,6 +1,6 @@
 "number","week","datum","title","description",
-1,"2","13-2-2025","Kickoff - Laravel project maken","Je begint met het installeren en configureren van een nieuw Laravel project voor je website. Ook installeer je een authentication starter kit, zodat gebruikers kunnen registreren en inloggen.",
-2,"3","29-2-2025","Design - Tailwind CSS / Layouts","Je leert hoe een layout en een view samenwerken. Je past de Tailwind CSS aan met jouw eigen kleuren en fonts en gebruikt SASS en Laravel Mix om je frontend assets te compileren. Je zet je design en layout om in layout in Laravel. "
+1,"2","13-1-2025","Kickoff - Laravel project maken","Je begint met het installeren en configureren van een nieuw Laravel project voor je website. Ook installeer je een authentication starter kit, zodat gebruikers kunnen registreren en inloggen.",
+2,"3","29-2-2025","Design - SCSS / Layouts","Je leert hoe een layout en een view samenwerken. Je past het Bootstrap of Tailwind frontend framework toe en configureerd deze zo dat de kleuren en de fonts zijn volgens jouw design, je gebruikt SASS en Laravel Vite om de frontend assets te compileren. Je design en layout is zichtbaar op de website. "
 3,"4","7-3-2025","Navigatie - Routes & Controllers","Je maakt een menu met links naar alle pagina’s op jouw website. Je maakt routes en controllers aan waar je later in verder kunt werken",
 4,"5","14-3-2025","Database - Migrations en Seeders","Je ontwerpt de data structuur voor jouw website en maakt de juiste model classes en migrations voor jouw database. Je maakt een seeder die alvast wat gegevens in de database zet om mee te werken.",
 5,"6","15-3-2025","Database - Controllers en Models","Je gaat de informatie uit de database met behulp van Controllers en Models ophalen.",
