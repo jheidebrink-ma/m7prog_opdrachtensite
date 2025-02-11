@@ -8,14 +8,14 @@ nav_exclude: true
 ## Laravel Breeze installeren (inloggen/uitloggen)
 {: .text-green-100 .fs-6 }
 
-[Laravel Breeze](https://laravel.com/docs/10.x/starter-kits#laravel-breeze){: target="_blank" %} is een starter kit van Laravel die
+[Laravel Breeze](https://laravel.com/docs/11.x/starter-kits#laravel-breeze-installation){: target="_blank" %} is een starter kit van Laravel die
 allerlei handige authenticatie features toevoegt aan je Laravel project.
 
 Als je dit installeert krijg je o.a. registratie, inlog, uitlog, wachtwoord vergeten e.d. tot je beschikking.
 
 ---
 ### 1- Installeer Breeze
-Doorloop nu de stappen om Breeze toe te voegen aan je project: [Installeer Breeze](https://laravel.com/docs/10.x/starter-kits#laravel-breeze-installation)
+Doorloop nu de stappen om Breeze toe te voegen aan je project: [Installeer Breeze](https://laravel.com/docs/11.x/starter-kits#laravel-breeze-installation)
 Je moet daarvoor de onderstaande commando's uitvoeren in de terminal.
 ```cmd
 composer require laravel/breeze --dev
