@@ -15,7 +15,7 @@ De bedoeling is dat je aan het eind een website hebt waarbij er een overzicht pa
 {: .text-green-200}
 
 - Responsive op mobiel, tablet en desktop
-- Je maakt gebruik van **Tailwind CSS** met eigen kleuren en instellingen SASS.
+- Je maakt gebruik van **Bootstrap CSS** of **Tailwind CSS** met eigen kleuren en instellingen SASS.
 - Je gebruikt **Laravel Mix** voor het compileren van je frontend assets.
 - Je website heeft een gebruiksvriendelijke layout, design en UXD _(User experience design)_.
 - Er is een duidelijk menu om door je website te navigeren.
