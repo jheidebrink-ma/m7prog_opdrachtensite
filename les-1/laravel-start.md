@@ -55,6 +55,8 @@ Zie je nu een error, dan moet je eerst composer installeren via: [https://getcom
 Vervolgens ga je naar je project folder en installeer je laravel met dit commando:  
 ```composer create-project laravel/laravel m7prog-laravel```  
 Nu kun je het project via docker starten.  
+
+### Starten van je project met docker
 Kopieer de volgende folders uit de vorige les of download ze hieronder en plaats ze in deze ( **m7prog-laravel** ) folder:  
 - /docker/ ( [download](docker.zip) )
 - /docker-compose.yml ( [download](docker-compose.yml) )
