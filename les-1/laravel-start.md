@@ -26,9 +26,9 @@ Hier vind je de laatste documentatie: [laravel.com - sail-on-windows](https://la
 Op Windows moet je gebruik maken van WSL. Dit is een Linux laag die binnen Windows gaat draaien.  
 1. Zorg ervoor dat je wsl geïnstalleerd hebt [Windows documentatie](https://learn.microsoft.com/en-us/windows/wsl/install)  
     Dit doe je door het volgende commando uit te voeren in command prompt:
-       ```shell
-       wsl --install
-       ```
+```shell
+wsl --install
+```
        Het kan zijn dat je een user moet aanmaken, hiervoor moet je een naam ingeven **zonder** _kapitalen_ en _spaties_.  
        Bij het invullen van het wachtwoord klopt het dat je **niets** ziet.  
 2. Open nu Docker Desktop.  
