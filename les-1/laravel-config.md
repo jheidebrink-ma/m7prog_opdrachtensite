@@ -16,7 +16,7 @@ Je gaat een nu je project instellen met de noodzakelijke gegevens.
 2. Als je Laravel hebt geïnitialiseerd via curl dan heb je een Sail setup en zijn de database instellingen al goed. 
 3. Als je geïnstalleerd hebt via composer dan moet je de database instellingen doen door:
   - in het **.env** bestand de DB_xxx instellingen in te vullen op basis van je docker-compose.yml gegevens. 
-4. Stel de **APP_NAME** in met de naam van jouw website.
+4. Pas de **APP_NAME** constante ( bovenin ) de .env file in met de naam van jouw website.
 
 ---
 ### 2- Testen
