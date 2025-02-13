@@ -39,6 +39,9 @@ Op Windows moet je gebruik maken van WSL. Dit is een Linux laag die binnen Windo
 ### 2a- Installatie via Curl
 Navigeer naar je project folder en voer het volgende commando uit in de terminal. Zo initialiseer je een nieuw laravel project in de folder **m7prog-laravel**:  
 ```curl -s "https://laravel.build/m7prog-laravel" | bash```  
+_Het kan zijn dat je een error tegen komt over een ```cmdlet invoke-expression at command pipeline position 1``` 
+Gebruik in dat geval de **wsl terminal** _   
+
 Navigeer nu naar de folder m7prog-laravel  
 ```cd m7prog-laravel```  
 Je kunt nu Laravel starten door gebruik te maken via Sail  
