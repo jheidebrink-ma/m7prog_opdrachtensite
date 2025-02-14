@@ -20,7 +20,7 @@ Je moet daarvoor de onderstaande commando's uitvoeren in de terminal.
 ```cmd
 composer require laravel/breeze --dev
 ```
-Als dit niet direct lukt, ga dan naar `Docker Desktop` en klik op de 3 puntjes achter je `php` of `Laravel.test` container en selecteer `terminal`.  
+Als dit niet direct lukt, ga dan naar `Docker Desktop` en klik op de 3 puntjes achter je `Laravel.test` container en selecteer `terminal`.  
 Daar kun je hetzelfde commando uitvoeren.
 
 ### 2- Breeze en Blade

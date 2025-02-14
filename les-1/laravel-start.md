@@ -55,7 +55,12 @@ Voordat je het framework kunt gebruiken moeten er misschien een aantal database 
 ```shell
 ./vendor/bin/sail artisan migrate
 ```
-
+Dit doe je in de ```terminal``` op mac, of in de WSL op windows.  
+Lukt dit niet, dan kun je dit ook in de terminal van de ```laravel-test``` instance het volgende commando uitvoeren:
+```shell
+php artisan migrate
+```
+De terminal kun je vinden door op de 3 puntjes achter de instance te klikken en dan ```terminal``` te selecteren.
 
 ---
 ### 4- Controle
