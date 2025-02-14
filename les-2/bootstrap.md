@@ -61,6 +61,6 @@ Bekijk de website en zie dat je nu een complete site hebt met een responsive des
 ---
 ### Volgende stap:
 {: .text-green-100 .fs-4 }  
-[Pas de Laravel layout aan naar jouw ontwerp en gebruik HTML/CSS en Tailwind CSS](laravel-layout)
+[Pas de Laravel layout aan naar jouw ontwerp en gebruik HTML/CSS](laravel-layout)
 
 

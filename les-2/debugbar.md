@@ -44,5 +44,7 @@ Daarnaast vind je een aantal elementen, bijvoorbeeld welke views en route er mom
 ### Volgende stap:
 {: .text-green-100 .fs-4 }  
 [Installeer Tailwind CSS](tailwind)
+OF  
+[Installeer Bootstrap CSS](bootstrap)
 
 
