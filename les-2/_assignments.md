@@ -2,6 +2,7 @@
 {: .text-green-200 .fs-6 }
 
 1. [Installeer de debug bar](debugbar)
+2. [Installeer Bootstrap CSS](bootstrap)
 2. [Installeer Tailwind CSS](tailwind)
 3. [Maak een design](design-layout)
 4. [Pas de Laravel layout aan naar jouw ontwerp en gebruik HTML/CSS en Tailwind CSS](laravel-layout)
