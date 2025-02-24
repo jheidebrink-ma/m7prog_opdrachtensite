@@ -11,6 +11,11 @@ Op deze website vind je de opdrachten voor de unit M7PROG waarbij wij een Larave
 
 ---
 
+## Planning
+[![Planning-m7.png](Planning-m7.png)](Planning-m7.pdf)
+
+---
+
 ## Opdrachten en uitleg
 
 {% for lesson in site.data.lessons %}
