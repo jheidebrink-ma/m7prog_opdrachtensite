@@ -23,7 +23,7 @@ Je gaat een nu je project instellen met de noodzakelijke gegevens.
 Bekijk je project nu in de browser.   
 1. Open Docker Desktop  
 2. Klik dan op de port achter `NGINX` of `Laravel-...` container.   
-3. In je browser zie je nu [http://localhost:88](http://localhost:88) of [http://localhost:89](http://localhost:89)  
+3. In je browser zie je nu [http://localhost](http://localhost)  
 
 ---
 
