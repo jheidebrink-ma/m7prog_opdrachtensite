@@ -26,9 +26,9 @@ composer require laravel/ui --dev
 ```
 
 
-Installeer de de Bootstrap 5 package   
+Installeer de Bootstrap 5 package door dit commando uit te voeren in de terminal van je laravel docker.     
 ```shell
-composer require laravel/ui --dev
+php artisan ui bootstrap --auth
 ```
 
 Waarschijnlijk zag je net een melding over een commando dat je nu moest uitvoeren:
