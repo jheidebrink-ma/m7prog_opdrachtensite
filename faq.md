@@ -30,3 +30,17 @@ Lees goed de foutmelding in de terminal.
 Zit je echt in de goede folder of heb je de `doker-compose.yml` in een sub folder staan.  
 Open in dat geval de subfolder.
 
+
+--- 
+### Waar vind ik phpmyadmin?
+Plaats de onderstaande code in je docker-compose.yml:
+```dockerfile
+    phpmyadmin:
+        image: phpmyadmin:latest
+        depends_on:
+          - mariadb
+        environment:
+          PMA_HOST: '${DB_HOST}'
+          PMA_USER: '${DB_USERNAME}'
+          PMA_PASSWORD: '${DB_PASSWORD}'
+```

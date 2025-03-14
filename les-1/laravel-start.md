@@ -44,8 +44,10 @@ Navigeer naar je project folder en voer het volgende commando uit in de terminal
 Gebruik in dat geval de **wsl terminal**, deze vind je onder het ```+``` teken rechtsboven.
 {: .text-red-100 .fs-3 } 
 
-Navigeer nu naar de folder m7prog-laravel  
-```cd m7prog-laravel```  
+Verplaats nu de gegevens uit de nieuwe **m7prog-laravel** folder naar de huidige folder:  
+```mv m7prog-laravel/* ./```
+Verwijder vervolgens de m7prog-laravel folder:
+```rm -r m7prog-laravel```
 Je kunt nu Laravel starten door gebruik te maken via Sail  
 ```./vendor/bin/sail up```
 
