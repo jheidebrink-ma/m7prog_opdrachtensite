@@ -37,8 +37,8 @@ Plaats de onderstaande code in je docker-compose.yml:
 ```dockerfile
     phpmyadmin:
         image: phpmyadmin:latest
-        depends_on:
-          - mariadb
+        ports:
+          - 888:80
         environment:
           PMA_HOST: '${DB_HOST}'
           PMA_USER: '${DB_USERNAME}'
