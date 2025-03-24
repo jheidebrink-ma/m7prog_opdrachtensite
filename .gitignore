@@ -8,3 +8,4 @@ vendor
 _config_local.yml
 ._*
 .~*
+node_modules
