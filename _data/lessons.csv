@@ -5,7 +5,7 @@
 4,"5","3-3-2025","Database - Migrations en Seeders","Je ontwerpt de data structuur voor jouw website en maakt de juiste model classes en migrations voor jouw database. Je maakt een seeder die alvast wat gegevens in de database zet om mee te werken.",
 5,"6","10-3-2025","Database - Controllers en Models","Je gaat de informatie uit de database met behulp van Controllers en Models ophalen.",
 6,"7","13-3-2025","Weergave - Controllers en Models","Je gaat verder met de vorige opdracht om informatie uit de database weer te geven.",
-7,"8","24-4-2054","CRUD - Forms & validatie (toevoegen gegevens)","Je gaat CRUD (Create-Read-Update-Delete) functionaliteit maken voor de gegevens op jouw website. Hiervoor maak je form(s) en leer je over het valideren van gegevens d.m.v. requests en validation rules",
+7,"8","24-3-2054","CRUD - Forms & validatie (toevoegen gegevens)","Je gaat CRUD (Create-Read-Update-Delete) functionaliteit maken voor de gegevens op jouw website. Hiervoor maak je form(s) en leer je over het valideren van gegevens d.m.v. requests en validation rules",
 8,"9","24-4-2025","CRUD - Aanpassen & verwijderen","Je zorgt dat de ingevoerde gegevens ook aangepast kunnen worden.",
 9,"10","1-4-2025","File uploads","Je voegt een file upload mogelijkheid toe aan één van je formulieren, en zorgt dat de gegevens in de database worden opgeslagen. Het geuploade bestand toon of gebruik je vervolgens op jouw website",
 10,"11","8-4-2025","Export data","Exporteer geselecteerde data naar een csv bestand dat je kunt downloaden via een download link door gebruik te maken van Models en Eloquent.",
