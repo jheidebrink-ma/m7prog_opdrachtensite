@@ -43,4 +43,6 @@ Plaats de onderstaande code in je docker-compose.yml:
           PMA_HOST: '${DB_HOST}'
           PMA_USER: '${DB_USERNAME}'
           PMA_PASSWORD: '${DB_PASSWORD}'
+        networks:
+            - sail
 ```
