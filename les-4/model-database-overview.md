@@ -29,34 +29,35 @@ De Eloquent oplossing heeft veel meer voordelen en mogelijkheden, het is ook vei
 ### QueryBuilder
 
 De QueryBuilder is een simpele manier om met gegevens uit je database te werken.  
-Deze code laat zien hoe je alle users ophaalt uit de `users` table (bijvoorbeeld in een controller method):
+Deze code laat zien hoe je alle autos' _( cars )_ ophaalt uit de `cars` table (bijvoorbeeld in een controller method):
 
 ```php
 // Bovenin je PHP file moet je altijd aangeven wat je bedoelt met DB
 use Illuminate\Support\Facades\DB;
 
-// En dan bijvoorbeeld in een listUsers() function in een controller
-public function listUsers(){
-    $users = DB::table('users')->get(); 
+// En dan bijvoorbeeld in een listCars() function in een controller
+public function listCars(){
+    $cars = DB::table('cars')->get(); 
     
-    // $user bevat een array met alle rijen uit de users table
-    foreach ($users as $user) {
-        echo $user->name;
+    // $car bevat een array met alle rijen uit de cars table
+    foreach ($cars as $car) {
+        echo $car->name;
     }
 }
 ```
 
-Om een rij aan de `users` table toe te voegen (insert) gebruik je de `insert()` method van de `DB` class:
+Om een rij aan de `cars` table toe te voegen (insert) gebruik je de `insert()` method van de `DB` class:
 
 ```php
 // Bovenin je PHP file moet je altijd aangeven wat je bedoelt met DB
 use Illuminate\Support\Facades\DB;
 
-// En dan bijvoorbeeld in een insertUser() function in een controller
-public function insertUser(){
-   DB::table('users')->insert([
-       'name' => 'Dylan',
-      'email' => 'dylan@example.com',
+// En dan bijvoorbeeld in een insertCar() function in een controller
+public function insertCar(){
+   DB::table('cars')->insert([
+       'make'       => 'Fiat',
+       'type'       => 'Panda',
+       'licence'    => 'kt-234-s',
    ]);
 }
 ```
@@ -74,29 +75,29 @@ Wij gaan **Eloquent** gebruiken om met gegevens uit de database te werken.
 
 
 De PHP model classes staan altijd in: `app\Models`.  
-Bijvoorbeeld `app\Models\User.php`:
+Bijvoorbeeld `app\Models\Car.php`:
 
 ```php
-class User extends Model {
-   // De User erft allerlei functions van de (Eloquent) Model class 
+class Car extends Model {
+   // De Car erft allerlei functions van de (Eloquent) Model class 
    // Hierdoor krijg je meteen al heel veel handige functionaliteit in je class!
 }
 ```
 
-Om deze User class (die in dit voorbeeld gekoppeld is aan de users table!) te gebruiken:
+Om deze Car class (die in dit voorbeeld gekoppeld is aan de cars table!) te gebruiken:
 
 ```php
 // Altijd bovenaan aangeven welke model class je gaat gebruiken
-use App\Models\User
+use App\Models\Car
 
 // Zelfde voorbeeld als in vorige code maar dan met de Eloquent model class
-public function listUsers(){
-    $users = User::all(); // Via User class haal je alles uit de 'users' table
+public function listCar(){
+    $cars = Car::all(); // Via Car model class haal je alles uit de 'cars' table
     
     // LET OP, HET VERSCHIL MET DE QUERYBUILDER IS: 
-    // In elke $user zit nu een instance van de User class (en dus geen array)
-    foreach ($users as $user) {
-        echo $user->name;
+    // In elke $car zit nu een instance van de Car class (en dus geen array)
+    foreach ($cars as $car) {
+        echo $car->type;
     }
 }
 ```
