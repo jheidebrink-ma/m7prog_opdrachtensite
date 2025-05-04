@@ -50,6 +50,10 @@ Verwijder vervolgens de m7prog-laravel folder:
 ```rm -r m7prog-laravel```
 Je kunt nu Laravel starten door gebruik te maken via Sail  
 ```./vendor/bin/sail up```
+Wil je niet elke keer dit hele pad moeten opgeven dan kun je een alias maken:  
+```alias sail='bash vendor/bin/sail'```  
+Vanaf nu kun je bijvoorbeeld dit commando uitvoeren voor een migratie:  
+```sail artisan migratea```
 
 ---
 ### 3- Migratie
