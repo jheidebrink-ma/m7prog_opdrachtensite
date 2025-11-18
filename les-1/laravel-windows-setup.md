@@ -12,6 +12,7 @@
     - `cd laradev`
 
 > ![](img/initcmd.PNG)
+> 
 ## laravel project opzetten
 
 - maak een nieuw project (type of kopieer):
