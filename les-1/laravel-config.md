@@ -26,6 +26,23 @@ Bekijk je project nu in de browser.
 3. In je browser zie je nu [http://localhost](http://localhost)  
 
 ---
+### 2- Editen van bestanden
+
+#### 1- OSX
+Om dit project te bewerken op een Apple _(OSX)_ kun je de folder met het project openen in jouw editor.  
+Het resultaat kun je zien in de browser.
+
+#### 2- Windows
+Een Windows computer geeft bestand stuk voor stuk door aan de Docker omgevingen via een Linux laag waardoor dit veel vertraging oplevert.   
+Al onze files staan nu in het linux file system van wsl hoe komen we daar bij?
+1. Open de file explorer (van windows)
+2. In de adres balk type je: `\\wsl.localhost\Ubuntu\home\android`
+3. Daar staat onze directory  ![](img/laradev.PNG)
+4. Open de `Laradev` directory in **visual studio code**
+5. Nu kan je beginnen met coderen!
+
+
+---
 
 {% include commit_push.md %}
 

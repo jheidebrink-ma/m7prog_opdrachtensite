@@ -1,10 +1,17 @@
-## wsl password kwijt?
+---
+title: Les 1
+layout: page
+permalink: :path/:basename
+nav_exclude: true
+---
 
-- open een terminal
-    - type `wsl -d Ubuntu --user root`
-    > nu zijn we als root ingelogd
+# wsl password kwijt?
 
-    - verander je android password:
-        - `sudo passwd android`
+### open een terminal
+type `wsl -d Ubuntu --user root`  
+_nu zijn we als root ingelogd_
 
-        - klaar!
+verander je android password:  
+`sudo passwd android`  
+
+klaar!
