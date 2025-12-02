@@ -8,5 +8,4 @@
 
 Extra:
 1. [Aanpassen swl wachtwoord](wsl-change-pw)
-2. [overview install on windows](install-on-windows.sh)
-3. [Laravel setup op Windows](laravel-windows-setup)
+2. [Laravel setup op Windows](laravel-windows-setup)
