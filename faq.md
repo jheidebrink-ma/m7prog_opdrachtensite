@@ -46,3 +46,11 @@ Plaats de onderstaande code in je docker-compose.yml:
         networks:
             - sail
 ```
+
+---
+### WSL password kwijt?
+Open een terminal.
+Type: `wsl -d Ubuntu --user root`  
+_nu zijn we als root ingelogd_
+Verander je android password:  
+`sudo passwd android`

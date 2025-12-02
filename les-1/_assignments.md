@@ -6,6 +6,5 @@
 3. [Configureer je Laravel project](laravel-config)
 4. [Installeer Laravel Breeze starter kit](install-breeze)
 
-Extra:
-1. [Aanpassen swl wachtwoord](wsl-change-pw)
-2. [Laravel setup op Windows](laravel-windows-setup)
+Alternatief voor Windows, losse handleiding:
+[Laravel setup op Windows](laravel-windows-setup)
