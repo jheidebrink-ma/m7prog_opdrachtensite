@@ -68,7 +68,7 @@ if (!empty($image)) {
 Waarde range: -100 tot +100
 
 ---
-### 4- Grijstinten (grayscale)
+### 4- Grijstinten (greyscale)
 Converteer een kleurenafbeelding naar zwart-wit:
 
 ```php

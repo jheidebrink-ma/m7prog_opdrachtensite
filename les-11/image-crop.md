@@ -162,7 +162,14 @@ if (!empty($image)) {
     // Maak thumbnail
     $img = Image::make($fullPath);
     $img->fit(200, 200); // Vierkante thumbnail
-    $thumbnailPath = str_replace('.jpg', '_thumb.jpg', $path);
+    
+    // Bepaal bestandsextensie
+    $pathInfo = pathinfo($path);
+    $extension = $pathInfo['extension'];
+    $filename = $pathInfo['filename'];
+    $directory = $pathInfo['dirname'];
+    $thumbnailPath = $directory . '/' . $filename . '_thumb.' . $extension;
+    
     $img->save(storage_path('app/' . $thumbnailPath));
     
     $project->image = $path;

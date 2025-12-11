@@ -30,28 +30,25 @@ Voer het volgende commando uit om de library te installeren:
 composer require intervention/image
 ```
 
-Voor Laravel 10+ gebruik je versie 3.x:
+Voor Laravel 10 gebruik je versie 2.x:
 ```bash
-composer require intervention/image:^3.0
+composer require intervention/image:^2.7
 ```
+
+**Let op:** Versie 3.x vereist Laravel 11+ en PHP 8.1+.
 
 ---
-### 3- Service Provider registreren (Laravel 10 en lager)
-Voor Laravel 11+ wordt de service provider automatisch geregistreerd.  
-Voor eerdere versies moet je de service provider handmatig toevoegen.
+### 3- Service Provider registreren
+Voor Laravel 5.5+ (inclusief Laravel 10) wordt de service provider automatisch geregistreerd via package auto-discovery.  
+Je hoeft dus normaal gesproken niets handmatig te configureren.
 
-Open `config/app.php` en voeg toe aan de `providers` array:
+Als je een oudere Laravel versie gebruikt (< 5.5), voeg dan handmatig toe aan `config/app.php`:
 ```php
 'providers' => [
-    // andere providers...
     Intervention\Image\ImageServiceProvider::class,
 ],
-```
 
-En voeg toe aan de `aliases` array:
-```php
 'aliases' => [
-    // andere aliases...
     'Image' => Intervention\Image\Facades\Image::class,
 ],
 ```

@@ -68,9 +68,15 @@ if (!empty($image)) {
     $fullPath = storage_path('app/' . $path);
     $img = Image::make($fullPath);
     
+    // Bepaal bestandsextensie
+    $pathInfo = pathinfo($path);
+    $extension = $pathInfo['extension'];
+    $filename = $pathInfo['filename'];
+    $directory = $pathInfo['dirname'];
+    
     // Maak een thumbnail (150x150)
     $img->fit(150, 150);
-    $thumbnailPath = str_replace('.jpg', '_thumb.jpg', $path);
+    $thumbnailPath = $directory . '/' . $filename . '_thumb.' . $extension;
     $img->save(storage_path('app/' . $thumbnailPath));
     
     // Maak een medium versie (400px breed)
@@ -78,7 +84,7 @@ if (!empty($image)) {
     $img->resize(400, null, function ($constraint) {
         $constraint->aspectRatio();
     });
-    $mediumPath = str_replace('.jpg', '_medium.jpg', $path);
+    $mediumPath = $directory . '/' . $filename . '_medium.' . $extension;
     $img->save(storage_path('app/' . $mediumPath));
     
     // Sla de paths op
