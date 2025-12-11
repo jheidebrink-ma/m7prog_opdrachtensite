@@ -163,7 +163,7 @@ Je kunt gebruikers een filter laten kiezen via het formulier:
 ```html
 <select name="image_filter" class="form-control">
     <option value="none">Geen filter</option>
-    <option value="grayscale">Zwart-wit</option>
+    <option value="greyscale">Zwart-wit</option>
     <option value="sepia">Sepia</option>
     <option value="bright">Extra helder</option>
     <option value="dark">Donker</option>
@@ -183,7 +183,7 @@ if (!empty($image)) {
     $filter = $request->input('image_filter', 'none');
     
     switch($filter) {
-        case 'grayscale':
+        case 'greyscale':
             $img->greyscale();
             break;
         case 'sepia':
