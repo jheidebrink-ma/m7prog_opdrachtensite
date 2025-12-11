@@ -9,3 +9,4 @@
 8,"9","2-4-2025","CRUD - Aanpassen & verwijderen","Je zorgt dat de ingevoerde gegevens ook aangepast kunnen worden.",
 9,"10","3-4-2025","File uploads","Je voegt een file upload mogelijkheid toe aan één van je formulieren, en zorgt dat de gegevens in de database worden opgeslagen. Het geuploade bestand toon of gebruik je vervolgens op jouw website",
 10,"11","4-4-2025","Export data","Exporteer geselecteerde data naar een csv bestand dat je kunt downloaden via een download link door gebruik te maken van Models en Eloquent.",
+11,"12","7-4-2025","Image bewerking","Je voegt de mogelijkheid toe om JPG en PNG afbeeldingen te uploaden en te bewerken. Je leert hoe je afbeeldingen kunt verkleinen, uitsnijden en kleur filters kunt toepassen met de Intervention Image library.",
