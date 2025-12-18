@@ -80,7 +80,7 @@ Gebruik in dat geval de **wsl terminal**, deze vind je onder het ```+``` teken r
 {: .text-red-100 .fs-3 }
 
 Navigeer nu naar je project folder, bv m7prog-laravel:  
-```rm -r m7prog-laravel```  
+```cd m7prog-laravel```  
 Je kunt nu Laravel starten door gebruik te maken via Sail  
 ```./vendor/bin/sail up -d```  
 Wil je niet elke keer dit hele pad moeten opgeven dan kun je een alias maken:    
